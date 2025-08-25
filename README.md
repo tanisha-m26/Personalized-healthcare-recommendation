@@ -1,84 +1,33 @@
-# Personalized Healthcare Recommendation System
+# Personalized Healthcare Recommendation
 
-A **real-time interactive healthcare recommendation system** built using **Python, Streamlit, and machine learning**. This dashboard allows users to explore healthcare data, view visualizations, and get personalized recommendations based on patient metrics.
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/tanisha-m26/personalized-healthcare-recommendation/main/app.py)
 
----
+This is a Streamlit app for personalized healthcare recommendations based on user input and predictive modeling.
 
+## Features
+- Predicts potential health conditions based on user-provided parameters
+- Provides personalized healthcare suggestions
+- Interactive and easy-to-use web interface
+- Visual representation of risk factors and recommended actions
 
-## 🛠 Installation & Setup
+## 🔗 Live App
+You can access the live app here: [Personalized Healthcare Recommendation](https://share.streamlit.io/tanisha-m26/personalized-healthcare-recommendation/main/app.py)
 
-1. **Clone the repository**
-
+## Run Locally
 ```bash
-git clone https://github.com/<your-username>/personalized-healthcare-recommendation.git
+# Clone the repository
+git clone https://github.com/tanisha-m26/personalized-healthcare-recommendation.git
+
+# Navigate into the project folder
 cd personalized-healthcare-recommendation
-Create a virtual environment (optional but recommended)
 
-```bash
+# Create a virtual environment (optional but recommended)
+python -m venv venv
+source venv/bin/activate  # Linux/macOS
+venv\Scripts\activate     # Windows
 
-
+# Install dependencies
 pip install -r requirements.txt
 
-pip install streamlit pandas numpy matplotlib seaborn plotly scikit-learn
-
-
-🚀 Running Locally
-
-Start the Streamlit app:
-
-
+# Run the Streamlit app
 streamlit run app.py
-
-
-Then open your browser at:
-
-
-Local URL: http://localhost:8501
-You should see the dashboard with options:
-
-Home: Explore dataset and visualizations.
-
-Feature Importance: View importance of features in the model.
-
-Model Metrics: View classification report & confusion matrix.
-
-Live Prediction: Input patient metrics to get personalized recommendations.
-
-🧪 Training the Model
-If you want to retrain the model:
-```bash
-python train_model.py
-
-This will generate/update models/healthcare_model.pkl.
-
-📊 Features
-Real-time patient data input and prediction
-
-Interactive visualizations (histograms, scatter plots)
-
-Feature importance charts
-
-Model performance metrics (classification report, confusion matrix)
-
-Sidebar navigation with logo and metrics overview
-
-🌐 Deployment
-You can deploy the app using Streamlit Cloud:
-
-Push your repository to GitHub:
-
-
-git add .
-git commit -m "Initial commit"
-git push origin main
-Go to Streamlit Cloud(https://share.streamlit.io/) and click New App.
-
-Select your GitHub repo and branch, then deploy.
-
-The app URL will be provided for access anywhere.
-
-🔗 Useful Links
-
- Streamlit_Documentation :https://docs.streamlit.io/
-Scikit-learn_Documentation :https://scikit-learn.org/stable/documentation.html
-Plotly_Express_Documentation :https://plotly.com/python/plotly-express/
